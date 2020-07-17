@@ -1,0 +1,221 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Comic Sans MS, Arial Black, sans serif;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+
+#bloc 
+{
+	display: flex;	
+}
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------Bloc Gauche---------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+.bloc_gauche
+{
+	background-color: #b71c1c;
+	width: 25%;
+}
+
+.photo
+{
+	border-radius: 100%;
+	display: flex;
+	margin: auto;	
+}
+
+.titre_gauche
+{
+	color: #d50000;
+	background-color: #000;
+	text-align: center;
+	font-size: 30px;
+}
+
+h2
+{
+	border-bottom: 2px #b71c1c solid;
+}
+
+.icone
+{
+	display: flex;
+	justify-content: space-around;
+	border-radius: 100%;	
+}
+
+.contact
+{
+	padding: 20px 40px;
+}
+
+.propos
+{
+	padding: 20px 40px;
+	text-align: justify; 
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------Bloc Droite---------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+
+.bloc_droite
+{
+	width: 75%;
+	margin: 0 70px;	
+}
+
+.titre
+{
+	padding: 30px 40px 30px 0px;		
+	font-size: 50px;
+}
+
+.titre_droite
+{	
+	padding: 0px 20px;
+	font-size: 30px;
+}
+
+.prenom
+{
+	color: #d50000;
+}
+
+.trait
+{
+	text-decoration: underline #b71c1c;  /*trait sous develo dans le titre */
+}
+
+#formation
+{
+    display: flex;
+}
+
+.fa-user-graduate
+{
+	color: #d50000;
+}
+
+.liste_date
+{
+	font-weight: bold;
+	width: 30%;	
+	margin-right: 30px;		
+	text-align: left;	
+}
+
+.annee1
+{
+	padding: 0px 0px 160px 0px;
+}
+
+.annee2
+{
+	padding: 80px 0px 0px 0px;
+}
+
+.liste_date li
+{
+	padding: 0px 0px 70px 0px;
+}
+
+.ecole
+{
+	width: 70%;
+	text-align: justify;		
+}
+
+#experience
+{
+    display: flex;                  	
+}
+
+.fa-suitcase
+{
+	color: #d50000;
+}
+
+.liste_mois
+{
+	font-weight: bold;
+	width: 30%;	
+	margin-right: 30px;	
+	text-align: left;	
+}
+
+.travail
+{
+	width: 70%;	
+	text-align: justify;
+}
+
+#recommandation
+{
+	padding: 10px 0px 10px 0px;
+    display: flex;	            
+}
+
+.fa-marker
+{
+	color: #d50000;
+}
+
+.copain /* nom des recommandations */
+{
+	font-size: 20px;
+	font-weight: bold; 
+}
+
+.rene
+{
+	text-align: left;
+	width: 50%;
+	padding: 0px 40px;
+}
+
+.bernard
+{
+	text-align: left;
+	width: 50%;
+}
+
+.fa-chevron-circle-right
+{
+   color: #d50000;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------Divers-----------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------*/
+
+
+.element /* Les éléments sont les noms des écoles et des emplois*/
+{ 
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
