@@ -1,7 +1,11 @@
+/* --------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------Général---------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------------*/
+
 body
 {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	font-family: Comic Sans MS, Arial Black, sans serif;
 }
 
@@ -41,27 +45,31 @@ ul
 	font-size: 30px;
 }
 
-h2
-{
-	border-bottom: 2px #b71c1c solid;
-}
-
 .icone
 {
 	display: flex;
-	justify-content: space-around;
-	border-radius: 100%;	
+	text-align: center;
+	justify-content: space-around;	
 }
 
 .contact
 {
-	padding: 20px 40px;
+	padding: 10px 40px;
 }
 
 .propos
 {
-	padding: 20px 40px;
+	padding: 20px 40px 550px 40px;
 	text-align: justify; 
+}
+
+.BlocIcone
+{
+	background-color: yellow;
+	width: 80px;
+	height: 80px;
+	border: 2px solid black;
+	border-radius: 100%;
 }
 
 
@@ -69,25 +77,27 @@ h2
 /* --------------------------------------------------------------------------------------------------------------------*/
 /* ------------------------------------------------Bloc Droite---------------------------------------------------------*/
 /* --------------------------------------------------------------------------------------------------------------------*/
+h1
+{
+	padding: 50px 0px 70px 0px;
+}
+.NomPrenom
+{
+	font-size: 60px;
+}
+
+h2
+{
+	font-size: 30px;
+}
 
 
 .bloc_droite
 {
 	width: 75%;
-	margin: 0 70px;	
-}
+	margin: 0px 70px;	
+}	
 
-.titre
-{
-	padding: 30px 40px 30px 0px;		
-	font-size: 50px;
-}
-
-.titre_droite
-{	
-	padding: 0px 20px;
-	font-size: 30px;
-}
 
 .prenom
 {
@@ -99,48 +109,45 @@ h2
 	text-decoration: underline #b71c1c;  /*trait sous develo dans le titre */
 }
 
-#formation
-{
-    display: flex;
-}
-
 .fa-user-graduate
 {
 	color: #d50000;
 }
 
-.liste_date
+h3
 {
-	font-weight: bold;
-	width: 30%;	
-	margin-right: 30px;		
-	text-align: left;	
+	border-bottom: 2px #b71c1c solid;
+	font-size: 30px;	
 }
 
-.annee1
+h4
 {
-	padding: 0px 0px 160px 0px;
+	padding: 0px;
 }
 
-.annee2
+.TitleDate
 {
-	padding: 80px 0px 0px 0px;
+	display: flex;
+	padding-top: 10px;	
 }
 
-.liste_date li
+.date
 {
-	padding: 0px 0px 70px 0px;
+    width: 30%; 
+    font-weight: bold;   
 }
 
-.ecole
+.title
 {
 	width: 70%;
-	text-align: justify;		
+	font-weight: bold;
 }
 
-#experience
+article
 {
-    display: flex;                  	
+	padding: 0px 0px 0px 310px;
+	text-align: justify;
+				
 }
 
 .fa-suitcase
@@ -148,23 +155,9 @@ h2
 	color: #d50000;
 }
 
-.liste_mois
-{
-	font-weight: bold;
-	width: 30%;	
-	margin-right: 30px;	
-	text-align: left;	
-}
-
-.travail
-{
-	width: 70%;	
-	text-align: justify;
-}
-
 #recommandation
 {
-	padding: 10px 0px 10px 0px;
+	
     display: flex;	            
 }
 
@@ -181,14 +174,14 @@ h2
 
 .rene
 {
-	text-align: left;
+	text-align: center;
 	width: 50%;
 	padding: 0px 40px;
 }
 
 .bernard
 {
-	text-align: left;
+	text-align: center;
 	width: 50%;
 }
 
@@ -198,14 +191,88 @@ h2
 }
 
 /* --------------------------------------------------------------------------------------------------------------------*/
-/* ---------------------------------------------------Divers-----------------------------------------------------------*/
+/* ---------------------------------------------------Responsive-----------------------------------------------------------*/
 /* --------------------------------------------------------------------------------------------------------------------*/
 
 
-.element /* Les éléments sont les noms des écoles et des emplois*/
-{ 
-	font-weight: bold;
+@media screen and (max-width: 1024px)
+{
+    #bloc
+    {
+        flex-wrap: wrap-reverse;
+    }
+
+    .bloc_gauche
+    {
+    	width: 100%;
+    }
+
+    .bloc_droite
+    {
+    	width: 100%;
+    	margin: 0px;
+    }
+
+    h3
+    {
+    	text-align: center;
+    }
+
+    .contact
+    {
+    	text-align: center;
+    }
+
+    .propos
+	{
+	padding: 20px 40px 20px 40px;	
+	}
+
+	article
+	{
+		width: 90%;
+		text-align: center;
+		padding: 10px 20px 10px 20px;
+
+	}
+	
+	 h4
+    {
+    	text-align: center;
+    }
+
+     h2
+    {
+    	text-align: center;
+    }
+
+    .date
+    {
+    	text-align: center;
+    	width: 50%;
+    }
+
+    .title
+    {
+    	text-align: center;
+    	width: 50%;
+    }
+
+    h1
+    {
+    	background-color: #b71c1c;
+    	text-align: center;
+    }
+    .photo
+    {
+
+    }
 }
+
+
+
+
+
 
 
 
