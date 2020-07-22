@@ -9,15 +9,14 @@ body
 	font-family: Comic Sans MS, Arial Black, sans serif;
 }
 
-ul
-{
-	list-style-type: none;
-}
-
-
 #bloc 
 {
 	display: flex;	
+}
+
+.bold
+{
+	font-weight: bold;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------*/
@@ -45,13 +44,6 @@ ul
 	font-size: 30px;
 }
 
-.icone
-{
-	display: flex;
-	text-align: center;
-	justify-content: space-around;	
-}
-
 .contact
 {
 	padding: 10px 40px;
@@ -59,13 +51,19 @@ ul
 
 .propos
 {
-	padding: 20px 40px 550px 40px;
+	padding: 20px 40px 390px 40px;
 	text-align: justify; 
 }
 
-.BlocIcone
+.icone
 {
-	background-color: yellow;
+	display: flex;
+	text-align: center;
+	justify-content: space-around;	
+}
+.bloc_icone
+{
+	background-color: #FFFFFF;
 	width: 80px;
 	height: 80px;
 	border: 2px solid black;
@@ -81,9 +79,14 @@ h1
 {
 	padding: 50px 0px 70px 0px;
 }
-.NomPrenom
+.nom_prenom
 {
 	font-size: 60px;
+}
+
+.photo_responsive
+{
+	display: none;
 }
 
 h2
@@ -91,13 +94,11 @@ h2
 	font-size: 30px;
 }
 
-
 .bloc_droite
 {
 	width: 75%;
 	margin: 0px 70px;	
 }	
-
 
 .prenom
 {
@@ -106,12 +107,13 @@ h2
 
 .trait
 {
-	text-decoration: underline #b71c1c;  /*trait sous develo dans le titre */
+	text-decoration: underline #b71c1c;  /*trait sous develo dans le titre h1*/
 }
 
 .fa-user-graduate
 {
 	color: #d50000;
+	padding-right: 60px;
 }
 
 h3
@@ -122,10 +124,10 @@ h3
 
 h4
 {
-	padding: 0px;
+	display: none;
 }
 
-.TitleDate
+.title_date
 {
 	display: flex;
 	padding-top: 10px;	
@@ -143,51 +145,42 @@ h4
 	font-weight: bold;
 }
 
+
 article
 {
 	padding: 0px 0px 0px 310px;
-	text-align: justify;
-				
+	text-align: justify;			
+}
+
+#recommandation
+{
+	display: flex;	            
+}
+
+.amis
+{
+	text-align: center;
+	width: 50%;
+	padding: 0px 0px 20px 0px;
+	
 }
 
 .fa-suitcase
 {
 	color: #d50000;
-}
-
-#recommandation
-{
-	
-    display: flex;	            
+	padding-right: 60px;
 }
 
 .fa-marker
 {
 	color: #d50000;
+	padding-right: 60px;
 }
 
-.copain /* nom des recommandations */
-{
-	font-size: 20px;
-	font-weight: bold; 
-}
-
-.rene
-{
-	text-align: center;
-	width: 50%;
-	padding: 0px 40px;
-}
-
-.bernard
-{
-	text-align: center;
-	width: 50%;
-}
 
 .fa-chevron-circle-right
 {
-   color: #d50000;
+    color: #d50000;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------*/
@@ -199,74 +192,136 @@ article
 {
     #bloc
     {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;        
     }
 
     .bloc_gauche
     {
-    	width: 100%;
+    	width: auto;
+    	justify-content: center;     	 	
     }
 
     .bloc_droite
     {
-    	width: 100%;
-    	margin: 0px;
+    	width: auto;
+    	justify-content: center;
+    	padding: 0px 10px 0px 10px;
+    	margin: auto; 
     }
 
     h3
     {
     	text-align: center;
+    	font-size: 20px;
+    	margin: 0px;
+    	padding: 0px;
     }
 
     .contact
     {
     	text-align: center;
+    	  	
     }
 
     .propos
 	{
-	padding: 20px 40px 20px 40px;	
-	}
-
-	article
-	{
-		width: 90%;
-		text-align: center;
-		padding: 10px 20px 10px 20px;
-
-	}
-	
-	 h4
-    {
-    	text-align: center;
+		text-align: justify; 
+		padding: 10px;
     }
 
-     h2
+    
+	article
+	{
+		width: auto;
+		text-align: justify;
+		padding: 0px 0px;
+		
+	}
+	
+	h2
     {
-    	text-align: center;
+    	text-align: center;    	   	
     }
 
     .date
     {
     	text-align: center;
-    	width: 50%;
+    	width: 100%;
+    	
     }
 
     .title
     {
     	text-align: center;
-    	width: 50%;
+    	width: 100%;
+    	
     }
 
     h1
     {
     	background-color: #b71c1c;
     	text-align: center;
+    	margin: 0px;  	  	  	   	
     }
-    .photo
-    {
 
+    .photo
+	{
+		display: none;
+	}
+
+	.photo_responsive
+	{
+		display: flex;			
+		border-radius: 100%;
+	}
+
+	.image_responsive
+	{
+		background-color: #b71c1c;
+		display: flex;
+		justify-content: center;
+	}
+
+	
+	.fa-user-graduate
+	{
+		
+		padding-right: 20px;
+	}
+
+
+	.fa-suitcase
+	{
+		
+		padding-right: 20px;
+	}
+
+
+	.fa-marker
+	{
+		
+		padding-right: 20px;
+	}
+
+	.title_date
+    {
+		flex-wrap: wrap;			
     }
+
+    .icone
+    {
+    	padding: 10px 10px;
+    }
+
+    .nom_prenom
+	{
+		font-size: 40px;
+	}
+
+	.prenom
+	{
+		color: #FFFFFF;
+	}
 }
 
 
