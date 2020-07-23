@@ -60,6 +60,7 @@ body
 	display: flex;
 	text-align: center;
 	justify-content: space-around;	
+	
 }
 .bloc_icone
 {
@@ -322,6 +323,16 @@ article
 	{
 		color: #FFFFFF;
 	}
+}
+
+$cd-btn: #011c37;
+$cd-txt: #15DEA5;
+.btn {
+    background: $cd-btn;
+    color: $cd-txt;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
 }
 
 
