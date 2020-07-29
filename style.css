@@ -51,7 +51,7 @@ body
 
 .propos
 {
-	padding: 20px 40px 390px 40px;
+	padding: 20px 40px 650px 40px;
 	text-align: justify; 
 }
 
@@ -128,7 +128,7 @@ h4
 	display: none;
 }
 
-.title_date
+.conteneur
 {
 	display: flex;
 	padding-top: 10px;	
@@ -146,11 +146,20 @@ h4
 	font-weight: bold;
 }
 
+.title_article
+{
+	
+	width: 70%;
+}
+
 
 article
 {
-	padding: 0px 0px 0px 310px;
-	text-align: justify;			
+	width: 70%;
+	display: flex;
+		
+	text-align: justify;
+
 }
 
 #recommandation
@@ -194,6 +203,11 @@ article
     #bloc
     {
         flex-wrap: wrap-reverse;        
+    }
+
+    .title_article
+    {
+    	width: 100%;
     }
 
     .bloc_gauche
@@ -304,7 +318,7 @@ article
 		padding-right: 20px;
 	}
 
-	.title_date
+	.conteneur
     {
 		flex-wrap: wrap;			
     }
@@ -325,15 +339,6 @@ article
 	}
 }
 
-$cd-btn: #011c37;
-$cd-txt: #15DEA5;
-.btn {
-    background: $cd-btn;
-    color: $cd-txt;
-    font-size: 3rem;
-    cursor: pointer;
-    padding: 1.85rem 3rem;
-}
 
 
 
